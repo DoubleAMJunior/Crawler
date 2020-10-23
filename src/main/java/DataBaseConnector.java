@@ -35,8 +35,8 @@ public class DataBaseConnector {
     private static Connection getConnection() throws SQLException {
        if(con==null){
            con= DriverManager.getConnection(
-                   "jdbc:mysql://localhost/searchengine?" +
-                           "user=root&password=\"insertPasswordForDataBase\"&useSSL=false&allowPublicKeyRetrieval=true");
+                   "jdbc:mysql://remotemysql.com:3306/gga9071v3N?" +
+                           "user=gga9071v3N&password=Uah2AzsV7f&useSSL=false&allowPublicKeyRetrieval=true");
        }
        return con;
     }
